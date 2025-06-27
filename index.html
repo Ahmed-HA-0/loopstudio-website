@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Loopstudios Website</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="hero" class="relative">
+      <!-- hero container -->
+      <div class="container max-w-6xl mx-auto px-6 py-12">
+        <!-- Navbar -->
+        <nav id="nav" class="flex flex-row justify-between items-center">
+          <!-- left side -->
+          <a href="/">
+            <img src="images/logo.svg" alt="" />
+          </a>
+          <!-- Desktop right side -->
+          <div class="hidden md:block">
+            <ul class="nav-list flex flex-row space-x-8 items-center">
+              <li class="text-white hover:underline font-alata">
+                <a href="#">About</a>
+              </li>
+              <li class="text-white hover:underline font-alata">
+                <a href="#">Careers</a>
+              </li>
+              <li class="text-white hover:underline font-alata">
+                <a href="#">Events</a>
+              </li>
+              <li class="text-white hover:underline font-alata">
+                <a href="#">Products</a>
+              </li>
+              <li class="text-white hover:underline font-alata">
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Mobile navigation -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="z-40 block hamburger md:hidden outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- hero-title -->
+        <div class="max-w-lg my-28 md:my-32">
+          <h1
+            class="text-white font-light font-sans tracking-wider uppercase border-2 px-5 py-4 md:py-10 md:px-10 text-4xl md:text-6xl md:leading-15"
+          >
+            Impressive Experiences That Deliver
+          </h1>
+        </div>
+      </div>
+      <!-- Navigation mobile menu -->
+      <div
+        id="mobile-menu"
+        class="absolute top-0 left-0 right-0 -bottom-30 bg-black px-15 items-center justify-center hidden"
+      >
+        <!-- list mobile -->
+        <div class="">
+          <ul class="list-mobile-nav flex flex-col space-y-5">
+            <li class="text-center">
+              <a
+                class="font-light border-b border-b-transparent hover:border-b-pink-500 text-white font-Josefin uppercase text-xl hover:text-pink-500 text-center duration-200 transition-all"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li class="text-center">
+              <a
+                class="font-light border-b border-b-transparent hover:border-b-pink-500 text-white font-Josefin uppercase text-xl hover:text-pink-500 text-center duration-200 transition-all"
+                href="#"
+                >Carrers</a
+              >
+            </li>
+            <li class="text-center">
+              <a
+                class="font-light border-b border-b-transparent hover:border-b-pink-500 text-white font-Josefin uppercase text-xl hover:text-pink-500 text-center duration-200 transition-all"
+                href="#"
+                >Events</a
+              >
+            </li>
+            <li class="text-center">
+              <a
+                class="font-light border-b border-b-transparent hover:border-b-pink-500 text-white font-Josefin uppercase text-xl hover:text-pink-500 text-center duration-200 transition-all"
+                href="#"
+                >Products</a
+              >
+            </li>
+            <li class="text-center">
+              <a
+                class="font-light border-b border-b-transparent hover:border-b-pink-500 text-white font-Josefin uppercase text-xl hover:text-pink-500 text-center duration-200 transition-all"
+                href="#"
+                >Support</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="mt-35" id="features">
+      <div
+        class="max-w-6xl px-6 flex flex-col md:flex-row items-center mx-auto relative md:px-0"
+      >
+        <img src="images/desktop/image-interactive.jpg" alt="" />
+
+        <div
+          class="text-center mt-10 md:absolute top-48 right-0 md:pl-20 pr-0 md:py-20 bg-white"
+        >
+          <h2
+            class="text-black uppercase text-4xl font-Josefin font-light md:text-5xl md:max-w-lg md:text-left"
+          >
+            The leader in interactive VR
+          </h2>
+          <p class="max-w-md font-light font-Josefin mt-4 md:text-left">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="creations">
+      <div class="max-w-6xl px-6 mx-auto my-30 text-gray-900 md:px-6">
+        <div class="flex justify-center mb-20 md:justify-between">
+          <h2
+            class="uppercase font-Josefin font-light text-4xl md:text-left md:text-5xl"
+          >
+            our creation
+          </h2>
+          <button class="hidden md:block btn">see all</button>
+        </div>
+        <div
+          class="grid grid-cols-1 justify-between items-center gap-y-6 text-2xl text-white uppercase md:grid-cols-4 md:gap-y-8 md:gap-x-8"
+        >
+          <div class="group relative overflow-hidden">
+            <img
+              class="hidden duration-200 md:block group-hover:scale-110"
+              src="images/desktop/image-deep-earth.jpg"
+              alt=""
+            />
+            <img
+              class="w-full duration-200 md:hidden"
+              src="images/mobile/image-deep-earth.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 text-white group-hover:text-black font-Josefin font-light px-6 w-52 md:px-8 group-hover:scale-110 duration-200"
+            >
+              deep earth
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden">
+            <img
+              class="hidden duration-200 md:block group-hover:scale-110"
+              src="images/desktop/image-night-arcade.jpg"
+              alt=""
+            />
+            <img
+              class="w-full duration-200 md:hidden"
+              src="images/mobile/image-night-arcade.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 text-white group-hover:text-black font-Josefin font-light px-6 w-52 md:px-8 group-hover:scale-110 duration-200"
+            >
+              night arcade
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden">
+            <img
+              class="hidden duration-200 md:block group-hover:scale-110"
+              src="images/desktop/image-soccer-team.jpg"
+              alt=""
+            />
+            <img
+              class="w-full duration-200 md:hidden"
+              src="images/mobile/image-soccer-team.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 text-white group-hover:text-black font-Josefin font-light px-6 w-52 md:px-8 group-hover:scale-110 duration-200"
+            >
+              soccre team vr
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden">
+            <img
+              class="hidden duration-200 md:block group-hover:scale-110"
+              src="images/desktop/image-grid.jpg"
+              alt=""
+            />
+            <img
+              class="w-full duration-200 md:hidden"
+              src="images/mobile/image-grid.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 text-white group-hover:text-black font-Josefin font-light px-6 w-52 md:px-8 group-hover:scale-110 duration-200"
+            >
+              the grid
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden">
+            <img
+              class="hidden duration-200 md:block group-hover:scale-110"
+              src="images/desktop/image-from-above.jpg"
+              alt=""
+            />
+            <img
+              class="w-full duration-200 md:hidden"
+              src="images/mobile/image-from-above.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 text-white group-hover:text-black font-Josefin font-light px-6 w-52 md:px-8 group-hover:scale-110 duration-200"
+            >
+              from up above vr
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden">
+            <img
+              class="hidden duration-200 md:block group-hover:scale-110"
+              src="images/desktop/image-pocket-borealis.jpg"
+              alt=""
+            />
+            <img
+              class="w-full duration-200 md:hidden"
+              src="images/mobile/image-pocket-borealis.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 text-white group-hover:text-black font-Josefin font-light px-6 w-52 md:px-8 group-hover:scale-110 duration-200"
+            >
+              pocket borealis
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden">
+            <img
+              class="hidden duration-200 md:block group-hover:scale-110"
+              src="images/desktop/image-curiosity.jpg"
+              alt=""
+            />
+            <img
+              class="w-full duration-200 md:hidden"
+              src="images/mobile/image-curiosity.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 text-white group-hover:text-black font-Josefin font-light px-6 w-52 md:px-8 group-hover:scale-110 duration-200"
+            >
+              the curiosity
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden">
+            <img
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+              src="images/desktop/image-fisheye.jpg"
+              alt=""
+            />
+            <img
+              class="w-full duration-200 md:hidden"
+              src="images/mobile/image-fisheye.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+            ></div>
+            <h5
+              class="absolute bottom-4 text-white group-hover:text-black font-Josefin font-light px-6 w-52 md:px-8 group-hover:scale-110 duration-200"
+            >
+              make it fisheye
+            </h5>
+          </div>
+        </div>
+        <button class="md:hidden mt-10 w-full btn">see all</button>
+      </div>
+    </section>
+
+    <footer id="footer" class="bg-black">
+      <div class="max-w-6xl py-10 px-4 mx-auto">
+        <div
+          class="flex flex-col justify-center items-center md:flex-row md:justify-between md:items-start pb-10"
+        >
+          <!-- image and navigation -->
+          <div
+            class="flex flex-col items-center md:items-start justify-center space-y-10 md:space-y-5"
+          >
+            <img class="w-44" src="images/logo.svg" alt="" />
+            <ul
+              class="nav-list flex flex-col md:flex-row justify-center space-y-8 items-center md:space-y-0 md:space-x-8"
+            >
+              <li class="text-white hover:underline font-Josefin font-light">
+                <a href="#">About</a>
+              </li>
+              <li class="text-white hover:underline font-Josefin font-light">
+                <a href="#">Careers</a>
+              </li>
+              <li class="text-white hover:underline font-Josefin font-light">
+                <a href="#">Events</a>
+              </li>
+              <li class="text-white hover:underline font-Josefin font-light">
+                <a href="#">Products</a>
+              </li>
+              <li class="text-white hover:underline font-Josefin font-light">
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+          <!-- socila links and copyright -->
+          <div
+            class="flex flex-col items-center md:items-start justify-center space-y-5 md:space-y-4 mt-9 md:mt-0"
+          >
+            <div>
+              <a class="text-white text-3xl mr-4" href="#"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a class="text-white text-3xl mr-4" href="#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a class="text-white text-3xl mr-4" href="#"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+              <a class="text-white text-3xl" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <p class="font-Josefin text-gray-500 font-thin text-md">
+              &#169; 2025 Loopstudios. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
